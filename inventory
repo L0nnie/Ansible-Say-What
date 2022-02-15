@@ -1,9 +1,15 @@
 [all]
-10.20.1.28 rhhost1
-10.20.1.30 rhcsa-cos8-1
+rhhost1 ansible_host=10.20.1.28 
+rhcsa-cos8-1 ansible_host=10.20.1.30 
 
 [rehl]
-10.20.1.28 rhhost1
+rhhost1 ansible_host=10.20.1.28 
 
 [centos8]
-10.20.1.30 rhcsa-cos8-1
+rhcsa-cos8-1 ansible_host=10.20.1.30 
+
+;webserver ansible_user=manager ansible_become=yes
+; When knowing only the IP
+;hostName1 ansible_host=192.0.2.50
+; With another port
+;hostName2 ansible_port=5555
