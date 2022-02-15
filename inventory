@@ -1,0 +1,9 @@
+[all]
+10.20.1.28 rhhost1
+10.20.1.30 rhcsa-cos8-1
+
+[rehl]
+10.20.1.28 rhhost1
+
+[centos8]
+10.20.1.30 rhcsa-cos8-1
