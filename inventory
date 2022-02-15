@@ -1,5 +1,9 @@
+[all]
+ansible_host=10.20.1.28 
+ansible_host=10.20.1.30
+
 [rhel]
-rhhost1 ansible_host=10.20.1.28 
+ansible_host=10.20.1.28 
 
 [centos8]
-rhcsa-cos8-1 ansible_host=10.20.1.30 
+ansible_host=10.20.1.30 
