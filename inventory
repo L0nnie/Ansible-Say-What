@@ -2,18 +2,23 @@
 10.20.1.28 
 10.20.1.30
 
+[all:vars]
+ansible_password=Kapalua1!
+ansible_ssh_user=root
+host_key_checking=False
+
 [rhel]
 10.20.1.28 
 
 [rhel:vars]
 ansible_password=Kapalua1!
-ansible_ssh_user=lvose
+ansible_ssh_user=root
 host_key_checking=False
 
 [centos8]
 10.20.1.30 
 
 [centos8vars]
-ansible_password=password
-ansible_ssh_user=student1
+ansible_password=Kapalua1!
+ansible_ssh_user=root
 host_key_checking=False
