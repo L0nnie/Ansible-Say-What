@@ -1,9 +1,9 @@
 [all]
-ansible_host=10.20.1.28 
-ansible_host=10.20.1.30
+10.20.1.28 
+10.20.1.30
 
 [rhel]
-ansible_host=10.20.1.28 
+10.20.1.28 
 
 [centos8]
-ansible_host=10.20.1.30 
+10.20.1.30 
