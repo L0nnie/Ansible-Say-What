@@ -1,6 +1,6 @@
 [all]
-rehl-8-1 ansible_host=10.20.1.28 ansible_ssh_user=lvose ansible_password=Kapalua1!
-centos-8-1 ansible_host=10.20.1.30 ansible_ssh_user=student1 ansible_password=password
+rehl-8-1 ansible_host=10.20.1.28 ansible_user=lvose ansible_password=Kapalua1!
+centos-8-1 ansible_host=10.20.1.30 ansible_user=student1 ansible_password=password
 
 [all:vars]
 ansible_password=Kapalua1!
