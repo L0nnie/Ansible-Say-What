@@ -1,4 +1,4 @@
-
+---
 - name: Add a new user named devops
      user:
           name={{username}}
