@@ -1,6 +1,5 @@
-de
 
-   - name: Add a new user named devops
+- name: Add a new user named devops
      user:
           name={{username}}
           password={{ devops_password }}
