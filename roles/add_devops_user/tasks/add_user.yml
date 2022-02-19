@@ -1,7 +1,7 @@
  
    - name: Add a new user named devops
      user:
-          name={{username}}
+          name={{ansible_user}}
           password={{ devops_password }}
  
    - name: Add devops user to the sudoers
@@ -10,7 +10,7 @@
           content: "{{username}}  ALL=(ALL)  NOPASSWD: ALL"
  
    - name: Deploy SSH Key
-     authorized_key: user={{username}}
+     authorized_key: user={{ansible_user}}
                      key="{{ lookup('file', 'id_rsa.pub') }}"
                      state=present
                      
