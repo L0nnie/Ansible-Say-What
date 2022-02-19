@@ -12,7 +12,7 @@
  
    - name: Deploy SSH Key
      authorized_key: user={{username}}
-                     key="{{ lookup('file', '/var/lib/awx/public/id_rsa.pub') }}"
+                     key="{{ lookup('file', '/var/lib/awx/public/devops_id_rsa.pub') }}"
                      state=present
                      
    - name: Disable Password Authentication
