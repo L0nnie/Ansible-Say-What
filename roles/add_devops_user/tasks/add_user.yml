@@ -1,4 +1,4 @@
-
+---
 - name: Add a new user named devops
     user:
       name={{username}}
@@ -6,14 +6,14 @@
      
 - name: Add devops user to the sudoers
     copy:
-      dest: "/etc/sudoers.d/{{username}}"
-      content: "{{username}}  ALL=(ALL)  NOPASSWD: ALL"
+      dest: /etc/sudoers.d/{{username}}
+      content: '{{username}}  ALL=(ALL)  NOPASSWD: ALL'
  
 - name: Deploy SSH Key
     authorized_key: 
       user={{username}}
       state=present
-      key="{{ lookup('file', '/home/devops/.ssh/id_rsa.pub') }}"
+      key="{{ lookup('file', "/home/devops/.ssh/id_rsa.pub") }}"
            
 - name: Disable Password Authentication
     lineinfile:
