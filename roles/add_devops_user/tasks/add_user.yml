@@ -1,8 +1,8 @@
 ---
 - name: Add a new user named devops
     user:
-      name={{username}}
-      password={{ devops_password }}
+      name: {{username}}
+      password: {{ devops_password }}
      
 - name: Add devops user to the sudoers
     copy:
