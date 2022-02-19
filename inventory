@@ -1,6 +1,6 @@
 [all]
-rehl-8-1 ansible_host=10.20.1.28 
-centos-8-1 ansible_host=10.20.1.30
+rehl-8-1 ansible_host=10.20.1.28 ansible_ssh_user=lvose ansible_password=Kapalua1!
+centos-8-1 ansible_host=10.20.1.30 ansible_ssh_user=student1 ansible_password=password
 
 [all:vars]
 ansible_password=Kapalua1!
@@ -12,13 +12,13 @@ rehl-8-1 ansible_host=10.20.1.28
 
 [rhel:vars]
 ansible_password=Kapalua1!
-ansible_ssh_user=root
+ansible_ssh_user=lvose
 host_key_checking=False
 
 [centos8]
 centos-8-1 ansible_host=10.20.1.30
 
 [centos8vars]
-ansible_password=Kapalua1!
-ansible_ssh_user=root
+ansible_password=password
+ansible_ssh_user=student1
 host_key_checking=False
