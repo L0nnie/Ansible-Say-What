@@ -13,7 +13,7 @@
   authorized_key: 
     user: "{{username}}"
     state: present
-    key: "{{ lookup('file', '/var/lib/aws/.ssh/devops_id_rsa.pub') }}"
+    key: "{{ lookup('file', '/usr/share/ansible/ssh-keys/devops_id_rsa.pub') }}"
            
 - name: Disable Password Authentication
   lineinfile:
