@@ -1,4 +1,4 @@
----
+op---
 
 [all]
 rehl-8-1 ansible_host: 10.20.1.28 ansible_user: lvose ansible_password: Kapalua1!
@@ -11,12 +11,12 @@ host_key_checking: False
 rehl-8-1 ansible_host: 10.20.1.28
 
 [rhel:vars]
-ansible_ssh_user=: lvose
+ansible_ssh_user=: devops
 host_key_checking: False
 
 [centos8]
 centos-8-1 ansible_host: 10.20.1.30
 
 [centos8:vars]
-ansible_ssh_user: student1
+ansible_ssh_user: devops
 host_key_checking: False
